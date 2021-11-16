@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+
+.main-photo{
+    background: url(../img/index/main-ngo-dim.jpg);
+    height: 820px;
+    background-size: cover;
+}

@@ -10,21 +10,20 @@
 }
 
 .main-photo{
-    background: linear-gradient( rgba(48, 48, 49, 0.4), rgba(48, 48, 49, 0.4) ), url(../img/index/main-ngo-dim.jpg);
-    height: 610px;
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(../img/index/main-ngo-dim.jpg);
+    min-height: 610px;
     background-size: cover;
     background-position: center;
 }
 
 .main-photo-text{
     text-align: center;
-    position: relative;
-
+    padding-top: 260px;
 }
 
 .main-photo-text > h1{
     font-family: "Rubik", sans-serif;
-    font-weight: 900;
+    font-weight: 400;
     color: white;
     font-size: 42px;
     padding: 10px;
@@ -32,7 +31,17 @@
 
 .main-photo-text > hr{
     border: none; 
-    color: red; 
-    background-color: red; 
-    height: 2px; 
+    color: rgba(255, 255, 255, 0.8); 
+    background-color: rgba(255, 255, 255, 0.8); 
+    height: 1px; 
+    width: 40%;
+    margin: auto;
+}
+
+.main-photo-text > h3{
+    font-family: "Fira Sans", sans-serif;
+    color: rgb(209,209,209);
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px;
 }

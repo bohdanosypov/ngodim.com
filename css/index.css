@@ -4,9 +4,35 @@
     scroll-behavior: smooth;
 }
 
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
 
 .main-photo{
-    background: url(../img/index/main-ngo-dim.jpg);
-    height: 820px;
+    background: linear-gradient( rgba(48, 48, 49, 0.4), rgba(48, 48, 49, 0.4) ), url(../img/index/main-ngo-dim.jpg);
+    height: 610px;
     background-size: cover;
+    background-position: center;
+}
+
+.main-photo-text{
+    text-align: center;
+    position: relative;
+
+}
+
+.main-photo-text > h1{
+    font-family: "Rubik", sans-serif;
+    font-weight: 900;
+    color: white;
+    font-size: 42px;
+    padding: 10px;
+}
+
+.main-photo-text > hr{
+    border: none; 
+    color: red; 
+    background-color: red; 
+    height: 2px; 
 }

@@ -10,15 +10,16 @@
 }
 
 .main-photo{
-    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(../img/index/main-ngo-dim.jpg);
-    min-height: 610px;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/index/main-ngo-dim.jpg);
+    height: 610px;
     background-size: cover;
     background-position: center;
+    background-position-y: 70%;
 }
 
 .main-photo-text{
     text-align: center;
-    padding-top: 260px;
+    padding-top: 280px;
 }
 
 .main-photo-text > h1{
@@ -38,10 +39,271 @@
     margin: auto;
 }
 
-.main-photo-text > h3{
+.main-photo-text > h2{
     font-family: "Fira Sans", sans-serif;
     color: rgb(209,209,209);
     font-size: 20px;
     font-weight: 400;
     padding: 10px;
 }
+
+@media (min-width: 992px){
+    .main-photo{
+        height: 820px;
+    }
+    .main-photo-text{
+        padding-top: 350px;
+    }
+    .main-photo-text > h1{
+        font-size: 68px;
+        width: 910px;
+        margin: auto;
+        text-align: center;
+        font-weight: 500;
+    }
+    .main-photo-text > h2{
+        font-size: 26px;
+    }
+}
+
+.about-us{
+    padding: 90px 24px;
+}
+
+.about-us-text{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.about-us-text > h2{
+    font-family: "Rubik", sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+    color: #225bc1;
+    padding-bottom: 30px;
+}
+
+.about-us-text > h3{
+    font-family: "Fira Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #828285;
+    line-height: 30px;
+    /* padding-bottom: 30px; */
+}
+
+.about-us-blocks{
+    display: grid;
+}
+
+.about-us-card{
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin: 25px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.1);
+}
+
+.about-us-card > img{
+    width: 85px;
+    margin: 10px auto;
+}
+
+.about-us-card > h3{
+    font-family: "Rubik", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: #303031;
+    line-height: 31px;
+    margin: 15px auto;
+}
+
+.about-us-card > p{
+    font-family: "Fira Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #828285;
+    line-height: 24px;
+    margin: 15px auto;
+}
+
+.about-us-card > hr{
+    height:4px;
+    width:19%;
+    background-color:#225bc1;
+    margin: auto;
+    border: none;
+}
+
+@media (min-width: 768px){
+    .about-us-blocks{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 992px){
+    .about-us-blocks{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .about-us-text > h2{
+        font-size: 46px;
+    }
+}
+
+
+.about-numbers-header{
+    background-image: url(../img/index/about-us/fon-grey-top.webp);
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+
+.about-numbers{
+    background-color: #F8F8F8;
+    padding-top: 40px;
+}
+
+.about-numbers-footer{
+    background-image: url(../img/index/about-us/fon-grey-bottom.webp);
+    padding-bottom: 100px;
+    background-position-x: 50%;
+}
+
+.about-numbers-blocks{
+    display: grid;
+}
+
+.about-numbers-card{
+    background-color: #225bc1;
+    border-radius: 10px;
+    text-align: center;
+    margin: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.about-numbers-card > h2{
+    font-family: "Rubik", sans-serif;
+    font-size: 54px;
+    font-weight: 700;
+    color: white;
+    line-height: 59px;
+    margin: 15px auto;
+}
+
+.about-numbers-card > hr{
+    height:4px;
+    width:19%;
+    background-color:rgb(251, 255, 60);
+    margin: auto;
+    border: none;
+}
+
+.about-numbers-card > p{
+    font-family: "Fira Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    line-height: 24px;
+    margin: 15px auto;
+}
+
+@media (min-width: 768px){
+    .about-numbers-blocks{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 992px){
+    .about-numbers-blocks{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .about-numbers-card > h2{
+        font-size: 82px;
+    }
+}
+
+.camp{
+    background-image: url(../img/index/camp/fon-camp.png);
+    background-position-x: 40%;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.camp-block{
+    display: grid;
+    padding: 100px 15px;
+}
+
+.camp-card{
+    background-color: white;
+    border-radius: 10px;
+    text-align: left;
+    margin: 25px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.camp-card > h2{
+    font-family: "Rubik", sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    color: #225bc1;
+    line-height: 38px;
+    padding: 15px 0;
+}
+
+.camp-card > hr{
+    height:4px;
+    width:19%;
+    background-color:rgb(251, 255, 60);
+    border: none;
+}
+
+.camp-card > p{
+    font-family: "Fira Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #828285;
+    line-height: 24px;
+    margin: 15px auto;
+}
+
+@media (min-width: 768px){
+    .camp{
+        background-position-x: 51%;
+    }
+    .camp-block{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 992px){
+    .camp{
+        background-position-x: right;
+    }
+    .camp-block{
+        grid-template-columns: 1fr 1.5fr;
+    }
+    .camp-card > h2{
+        font-size: 46px;
+    }
+}
+
+.docudays-poster{
+    background-image: url(../img/index/docudays/poster.jpg);
+    height: 220px;
+    background-size: cover;
+    background-position-y: 55%;
+}
+
+.docudays-info{
+    background-image: url(../img/index/docudays/fon-blue.webp);
+}
+
+
+

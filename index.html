@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/header-footer.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index-carrousel.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400&family=Rubik:wght@300;500&display=swap"
@@ -111,32 +112,32 @@
         <section class="docudays">
             <div class="docudays-poster"></div>
             <div class="docudays-info">
-                <div>
+                <div class="docudays-info-header container-docudays">
                     <h2>Кіноклуб Docudays UA</h2>
                     <h3>при Громадській організації "Добротвірська ініціативна молодь"</h3>
                     <p>Ми створюємо можливості для кожної людини в Україні дивитися талановите та актуальне
                         документальне кіно з усього світу про права людини. Формуємо активну громадянську позицію та
                         повагу до людської гідності. Підтримуємо розвиток української кіноіндустрії.</p>
                 </div>
-                <div>
+                <div class="docudays-info-footer container-docudays">
                     <h4>Основними етичними принципами діяльності вважаються:</h4>
-                    <div>
+                    <div class="docudays-info-check">
                         <img src="img/index/docudays/check.png" alt="check">
                         <p>Незалежність та неупередженість</p>
                     </div>
-                    <div>
+                    <div class="docudays-info-check">
                         <img src="img/index/docudays/check.png" alt="check">
                         <p>Активна правозахисна та громадянська позиція</p>
                     </div>
-                    <div>
+                    <div class="docudays-info-check">
                         <img src="img/index/docudays/check.png" alt="check">
                         <p>Рівність і недискримінація</p>
                     </div>
-                    <div>
+                    <div class="docudays-info-check">
                         <img src="img/index/docudays/check.png" alt="check">
                         <p>Солідарність та доброзичливе співробітництво</p>
                     </div>
-                    <div>
+                    <div class="docudays-info-check">
                         <img src="img/index/docudays/check.png" alt="check">
                         <p>Ефективне та ощадливе використання ресурсів.</p>
                     </div>
@@ -144,34 +145,57 @@
                 </div>
             </div>
         </section>
-        <!-- <section class="projects" id="projects">
-            <div>
+        <section class="projects" id="projects">
+            <div class="projects-text container">
                 <h2>Заходи</h2>
                 <h3>Ми пропонуємо заходи, які дійсно цікаві для ваших дітей</h3>
             </div>
-            <div>
-                <div>
-                    <img src="img/index/projects/holiday.jpg" alt="Веселі діти">
+            <div class="projects-blocks container">
+                <div class="projects-card">
+                    <div class="projects-card-img card-img-holiday"></div>
                     <p>Державні свята</p>
                 </div>
-                <div>
-                    <img src="img/index/projects/camps.jpg" alt="Веселі діти">
+                <div class="projects-card">
+                    <div class="projects-card-img card-img-camps"></div>
                     <p>Табори</p>
                 </div>
-                <div>
-                    <img src="img/index/projects/mykolia.jpg" alt="Веселі діти">
+                <div class="projects-card">
+                    <div class="projects-card-img card-img-mykolia"></div>
                     <p>День Святого Миколая</p>
                 </div>
             </div>
-            <a href="news.html">Детальніше</a>
+            <div class="projects-button">
+                <a href="news.html">Більше</a>
+            </div>
         </section>
+        <div class="projects-bottom"></div>
         <section class="gallery" id="gallery">
-            <div>
+            <div class="gallery-text">
                 <h2>Галерея</h2>
                 <h3>Ми створюємо атмосферу, де можна вчитися, пізнавати щось нове та розважатися</h3>
             </div>
-            <div>
-
+            <div class="ant-carousel">
+                <div class="ant-carousel-hider">
+                    <ul class="ant-carousel-list">
+                        <li class="ant-carousel-element"><img src="/img/index/gallery/galleru-one.jpg" alt="0">
+                        </li>
+                        <li class="ant-carousel-element"><img src="/img/index/gallery/gallery-two.jpg" alt="1">
+                        </li>
+                        <li class="ant-carousel-element"><img src="/img/index/gallery/gallery-three.jpg" alt="2">
+                        </li>
+                        <li class="ant-carousel-element"><img src="/img/index/gallery/gallery-four.jpg" alt="3">
+                        </li>
+                        <li class="ant-carousel-element"><img src="/img/index/gallery/gallery-five.jpg" alt="4">
+                        </li>
+                        <li class="ant-carousel-element"><img src="/img/index/gallery/gallery-six.jpg" alt="5">
+                        </li>
+                        <li class="ant-carousel-element"><img src="/img/index/gallery/gallery-seven.jpg" alt="6">
+                        </li>
+                    </ul>
+                </div>
+                <div class="ant-carousel-arrow-left"></div>
+                <div class="ant-carousel-arrow-right"></div>
+                <div class="ant-carousel-dots"></div>
             </div>
         </section>
         <section class="documents">
@@ -197,7 +221,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact-form">
+        <!-- <section class="contact-form">
             <div>
                 <div>
                     <h2>Хочете знати більше?</h2>
@@ -265,6 +289,7 @@
             <p>All rights Reserved</p>
         </div>
     </footer>-->
+        <script src="js/index-carrousel.js"></script>
 </body>
 
 </html>

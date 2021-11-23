@@ -89,7 +89,6 @@
     font-weight: 400;
     color: #828285;
     line-height: 30px;
-    /* padding-bottom: 30px; */
 }
 
 .about-us-blocks{
@@ -303,7 +302,265 @@
 
 .docudays-info{
     background-image: url(../img/index/docudays/fon-blue.webp);
+    padding: 70px 30px;
 }
 
+.container-docudays{
+    max-width: 714px;
+    margin: auto;
+}
 
+.docudays-info-header{
+    display: grid;
+}
 
+.docudays-info-header > h2{
+    font-family: "Rubik", sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    color: white;
+    line-height: 38px;
+    padding: 15px 0;
+    text-align: left;
+}
+
+.docudays-info-header > h3{
+    font-family: "Rubik", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: white;
+    line-height: 31px;
+    padding: 15px 0;
+    text-align: left;
+}
+
+.docudays-info-header > p{
+    font-family: "Fira Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    line-height: 24px;
+    padding: 15px 0;
+    text-align: left;
+}   
+
+.docudays-info-footer{
+    display: grid;
+}
+
+.docudays-info-footer > h4{
+    font-family: "Fira Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    line-height: 24px;
+    padding: 15px 0;
+    text-align: left;
+}
+
+.docudays-info-footer > p{
+    font-family: "Fira Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    line-height: 27px;
+    margin: 15px 0;
+    padding: 15px 0;
+    text-align: left;
+}
+
+.docudays-info-check{
+    display: flex;
+    margin: 10px 0;
+}
+
+.docudays-info-check > img{
+    width: 20px;
+    height: 20px;
+    
+}
+
+.docudays-info-check > p{
+    font-family: "Fira Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    line-height: 23px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+@media (min-width: 768px){
+    .docudays{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .docudays-poster{
+        height: auto;
+        background-position-x: 86%;
+    }
+}
+
+.projects{
+    padding: 90px 30px 40px 30px;
+    margin: auto;
+    background-color: #F8F8F8;
+}
+
+.projects-text{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.projects-text > h2{
+    font-family: "Rubik", sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+    color: #225bc1;
+    padding-bottom: 20px;
+}
+
+.projects-text > h3{
+    font-family: "Fira Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #828285;
+    line-height: 30px;
+}
+
+.projects-blocks{
+    display: grid;
+}
+
+.projects-card{
+    padding: 30px 0;
+    display: grid;
+    width: 272px;
+    margin: auto;
+}
+
+.projects-card-img{
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 317px;
+    border-radius: 20px;
+}
+
+.card-img-holiday{
+    background-image: url(../img/index/projects/holiday.jpg);
+}
+
+.card-img-camps{
+    background-image: url(../img/index/projects/camps.jpg);
+}
+
+.card-img-mykolia{
+    background-image: url(../img/index/projects/mykolia.jpg);
+}
+
+.projects-card > p{
+    padding: 17px 35px;
+    background-color: #225bc1;
+    border-radius: 20px;
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: white;
+    margin: -40px 10px 0 10px;
+}
+
+.projects-button{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.projects-button > a{
+    text-decoration: none;
+    background-color: #FBFF3C;
+    color: #303031;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+
+.projects-button > a:hover{
+    background-color: #225bc1;
+    color: #F8F8F8;
+    transition: 1s;
+}
+
+.projects-bottom{
+    background-image: url(../img/index/about-us/fon-grey-bottom.webp);
+    padding-bottom: 100px;
+    background-size: cover;
+    background-position: center;
+}
+
+@media (min-width: 768px){
+    .projects-blocks{
+        grid-template-columns: 1fr 1fr;
+    }
+    .projects-card{
+        width: 337px;
+    }
+    .projects-card-img{
+        height: 398px;
+    }
+}
+
+@media (min-width: 992px){
+    .projects-blocks{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .projects-card{
+        width: 284px;
+    }
+    .projects-card-img{
+        height: 332px;
+    }
+    .projects-text > h2{
+        font-size: 46px;
+    }
+    .projects-card > p{
+        margin: -40px 20px 0 20px;
+    }
+}
+
+@media (min-width: 1280px){
+    .projects-card{
+        width: 370px;
+    }
+    .projects-card-img{
+        height: 439px;
+    }
+}
+
+.gallery{
+    padding: 90px 0 45px;
+}
+
+.gallery-text{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.gallery-text > h2{
+    font-family: "Rubik", sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+    color: #225bc1;
+    padding-bottom: 20px;
+}
+
+.gallery-text > h3{
+    font-family: "Fira Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #828285;
+    line-height: 30px;
+}

@@ -178,7 +178,7 @@
             <div class="ant-carousel">
                 <div class="ant-carousel-hider">
                     <ul class="ant-carousel-list">
-                        <li class="ant-carousel-element"><img src="/img/index/gallery/galleru-one.jpg" alt="0">
+                        <li class="ant-carousel-element"><img src="/img/index/gallery/gallery-one.jpg" alt="0">
                         </li>
                         <li class="ant-carousel-element"><img src="/img/index/gallery/gallery-two.jpg" alt="1">
                         </li>
@@ -225,12 +225,12 @@
         </section>
         <section class="contact-form">
             <div class="contact-form-block container">
-                <div>
+                <div class="contact-form-text-card">
                     <div class="contact-form-text">
                         <h2>Хочете знати більше?</h2>
                         <h3>Зателефонуйте або пишіть нам, щоб дізнатися більше чи запропонувати Ваші ідеї</h3>
                     </div>
-                    <div>
+                    <div class="contact-accordion">
                         <button class="accordion">Якого віку діти можуть брати учать в таборі?</button>
                         <div class="panel">
                             <p>Діти з 7 до 13 років будуть прийняті в табір.</p>
@@ -243,84 +243,98 @@
                         <hr class="line">
                         <button class="accordion">Коли проводяться покази документального кіно?</button>
                         <div class="panel">
-                            <p>Кіноклуб Docudays UA при Громадській організації "Добротвірська ініціативна молодь" проводить покази документального кіно один раз на місяць (деталі у новинах).</p>
+                            <p>Кіноклуб Docudays UA при Громадській організації "Добротвірська ініціативна молодь"
+                                проводить
+                                покази документального кіно один раз на місяць (деталі у новинах).</p>
                         </div>
                         <hr class="line">
                         <button class="accordion">Як долучитися до команди ГО "ДІМ"?</button>
                         <div class="panel">
-                            <p>Заповніть анкету, щоб бути першим/першою, хто дізнається про старт нового набору волонтерів/аніматорів.
+                            <p>Заповніть анкету, щоб бути першим/першою, хто дізнається про старт нового набору
+                                волонтерів/аніматорів. <br>
                                 ! Волонтером можливо стати ЛИШЕ досягнувши 14-ти років.</p>
                         </div>
                         <hr class="line">
                     </div>
                 </div>
-                <div>
-                    <form class="contact-form" action="https://formspree.io/f/mayvwnoq" method="POST">
-                        <input class="" type="text" name="user-name" placeholder="Ваше ім'я" required>
-                        <input class="" type="tell" name="user-tell" placeholder="Номер телефону" required>
-                        <input class="" type="email" name="user-email" placeholder="Email" required>
-                        <input class="" type="text" name="user-message" placeholder="Напишіть Ваше повідомлення"
-                            required>
-                        <button class="" type="submit">Надіслати</button>
-                        <p id="contact-form-status"></p>
+                <div class="contact-form-card">
+                    <form class="form">
+                        <input type="text" name="user-name" placeholder="Ваше ім'я" required>
+                        <input type="tel" name="user-tel" placeholder="Номер телефону" required>
+                        <input type="email" name="user-email" placeholder="Email" required>
+                        <textarea class="form-message" name="user-message" placeholder="Напишіть Ваше повідомлення"
+                            required></textarea>
+                        <button class="form-button" type="submit">Надіслати</button>
+                        <p class="contact-form-status"></p>
                     </form>
                 </div>
             </div>
         </section>
     </main>
-    <!-- <footer id="footer">
-        <div>
-            <div>
-                <a href="https://www.facebook.com/NG0DIM" target="_blank"><img src="img/footer/facebook.png"
-                        alt="Facebook"></a>
-                <a href="https://www.facebook.com/NG0DIM" target="_blank"><img src="img/footer/telegram.png"
-                        alt="Telegram"></a>
-                <a href="https://www.instagram.com/ngo__dim/" target="_blank"><img src="img/footer/instagram.png"
-                        alt="Instagram"></a>
+    <div class="footer-top"></div>
+    <footer id="footer">
+        <div class="">
+            <div class="footer-follow-contact">
+                <div class="footer-follow">
+                    <a href="https://www.facebook.com/NG0DIM" target="_blank"><img src="img/footer/facebook.png"
+                            alt="Facebook"></a>
+                    <a href="https://www.facebook.com/NG0DIM" target="_blank"><img src="img/footer/telegram.png"
+                            alt="Telegram"></a>
+                    <a href="https://www.instagram.com/ngo__dim/" target="_blank"><img src="img/footer/instagram.png"
+                            alt="Instagram"></a>
+                </div>
+                <div class="footer-contact">
+                    <div class="footer-contact-card">
+                        <h3>Номер телефону</h3>
+                        <a href="tel:+380936246541">+38 (093) 62 46 541</a>
+                    </div>
+                    <div class="footer-contact-card">
+                        <h3>Email</h3>
+                        <a href="mailto:info@ngodim.com">info@ngodim.com</a>
+                    </div>
+                    <div class="footer-contact-card">
+                        <h3>Адреса</h3>
+                        <a href="https://goo.gl/maps/7nyLetH9xYF3QXfCA">вул. Сагайдачного, 2, Добротвір,<br> Львівська
+                            область,
+                            80411</a>
+                    </div>
+                </div>
             </div>
-            <div>
-                <div>
-                    <h3>Номер телефону</h3>
-                    <a href="tel:+380936246541">+38 (093) 62 46 541</a>
+            <hr class="footer-line">
+            <div class="footer-logo-nav-map">
+                <div class="footer-logo">
+                    <a href="index.html"><img src="img/footer/logo-footer.png" alt="Логотип ГО ДІМ"></a>
+                    <h5>Ми - активна та ініціативна молодь Добротвірської громади. Беремо активну участь у розвитку
+                        дітей та
+                        молоді нашого містечка і отримувати від цього задоволення.</h5>
                 </div>
-                <div>
-                    <h3>Email</h3>
-                    <a href="mailto:info@ngodim.com">info@ngodim.com</a>
+                <div class="footer-menu">
+                    <h3>Меню</h3>
+                    <hr class="menu-line">
+                    <nav class="footer-nav">
+                        <a href="#header">Головна</a>
+                        <a href="about.html" target="_blank">Про нас</a>
+                        <a href="news.html" target="_blank">Новини</a>
+                        <a href="#projects">Заходи</a>
+                        <a href="#gallery">Галерея</a>
+                    </nav>
                 </div>
-                <div>
-                    <h3>Адреса</h3>
-                    <a href="https://goo.gl/maps/7nyLetH9xYF3QXfCA">вул. Сагайдачного, 2, Добротвір, Львівська область,
-                        80411</a>
+                <div class="footer-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2553.8570409897034!2d24.382309552014455!3d50.20120307934077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47252f25e69b7af3%3A0x36e7832f3f0b0779!2z0JPRgNC-0LzQsNC00YHRjNC60LAg0L7RgNCz0LDQvdGW0LfQsNGG0ZbRjyAi0JTQvtCx0YDQvtGC0LLRltGA0YHRjNC60LAg0ZbQvdGW0YbRltCw0YLQuNCy0L3QsCDQvNC-0LvQvtC00Ywi!5e0!3m2!1suk!2sua!4v1637004961382!5m2!1suk!2sua"
+                        width="100%" height="258" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
+            </div>
+            <hr class="footer-line">
+            <div class="created-by">
+                <p>© Created by ГО "ДІМ"</p>
+                <p>All rights Reserved</p>
             </div>
         </div>
-        <div>
-            <div>
-                <a href="index.html"><img src="img/footer/logo-footer.png" alt="Логотип ГО ДІМ"></a>
-                <h5>Ми - активна та ініціативна молодь Добротвірської громади. Беремо активну участь у розвитку дітей та
-                    молоді нашого містечка і отримувати від цього задоволення.</h5>
-            </div>
-            <nav>
-                <a href="#header">Головна</a>
-                <a href="about.html" target="_blank">Про нас</a>
-                <a href="news.html" target="_blank">Новини</a>
-                <a href="#projects">Заходи</a>
-                <a href="#gallery">Галерея</a>
-            </nav>
-            <div>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2553.8570409897034!2d24.382309552014455!3d50.20120307934077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47252f25e69b7af3%3A0x36e7832f3f0b0779!2z0JPRgNC-0LzQsNC00YHRjNC60LAg0L7RgNCz0LDQvdGW0LfQsNGG0ZbRjyAi0JTQvtCx0YDQvtGC0LLRltGA0YHRjNC60LAg0ZbQvdGW0YbRltCw0YLQuNCy0L3QsCDQvNC-0LvQvtC00Ywi!5e0!3m2!1suk!2sua!4v1637004961382!5m2!1suk!2sua"
-                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </div>
-        <div>
-            <p>© Created by ГО "ДІМ"</p>
-            <p>All rights Reserved</p>
-        </div>
-    </footer>-->
+    </footer>
     <script src="js/index-carrousel.js"></script>
     <script src="js/index-accordion.js"></script>
-    
+
 </body>
 
 </html>

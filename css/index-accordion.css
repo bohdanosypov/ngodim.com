@@ -10,6 +10,7 @@
     font-family: "Rubik", sans-serif;
     font-size: 22px;
     font-weight: 500;
+    line-height: 31px;
     transition: 0.4s;
 }
 
@@ -19,7 +20,6 @@
     color: #777;
     font-weight: bold;
     float: right;
-    margin-left: 5px;
 }
 
 .active:after {
@@ -45,3 +45,5 @@
     background-color: #828285;
     border: none;
 }
+
+

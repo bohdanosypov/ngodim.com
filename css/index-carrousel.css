@@ -76,10 +76,13 @@
     }
   }
 
-  @media (min-width: 768px){
+  @media (min-width: 992px){
     .ant-carousel-element > img{
         width: 360px;
         height: 280px;
+    }
+    div.ant-carousel-arrow-right{
+        right: -1px;
     }
   }
   
@@ -95,18 +98,19 @@
   }
   
   div.ant-carousel-arrow-left {
-    left: -40px;
+    left: -10px;
     top: 40%;
     display: block;
     background: url("http://pvbk.spb.ru/inc/carousel/ant-files/ant-arrow-left.png") no-repeat;
   }
   
   div.ant-carousel-arrow-right {
-    right: -40px;
+    right: -11px;
     top: 40%;
     display: block;
     background: url("http://pvbk.spb.ru/inc/carousel/ant-files/ant-arrow-right.png") no-repeat;
   }
+
   
   div.ant-carousel-arrow-left:hover {
     opacity: 1.0;

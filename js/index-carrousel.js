@@ -1,3 +1,5 @@
+(function () {
+
 function Ant(crslId) {
 
 	let id = document.getElementById(crslId);
@@ -230,3 +232,4 @@ Ant.initialize = function(that) {
 };
 
 new Ant();
+} )();

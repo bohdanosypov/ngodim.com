@@ -1,0 +1,47 @@
+.accordion {
+    background-color: #F8F8F8;
+    color: #225bc1;
+    cursor: pointer;
+    padding: 18px 0;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-family: "Rubik", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    transition: 0.4s;
+}
+
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: #F8F8F8;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #828285;
+    line-height: 30px;
+}
+
+.line{
+    height:1px;
+    width:100%;
+    background-color: #828285;
+    border: none;
+}

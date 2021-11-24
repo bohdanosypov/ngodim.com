@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/header-footer.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/index-carrousel.css">
+    <link rel="stylesheet" href="css/index-accordion.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400&family=Rubik:wght@300;500&display=swap"
@@ -198,48 +199,76 @@
                 <div class="ant-carousel-dots"></div>
             </div>
         </section>
+        <div class="documents-top"></div>
         <section class="documents">
-            <h2>Документи</h2>
-            <div>
-                <div>
+            <h2 class="documents-text">Документи</h2>
+            <div class="documents-block container">
+                <div class="documents-card">
                     <a href="https://drive.google.com/file/d/1wNFZT2YpSGPAW2F1frRjTJvM3WyqVrhb/view?usp=sharing"
-                        target="_blank"><img src="img/index/documents/pdf.png" alt=""></a>
+                        target="_blank"><img class="documents-card-img" src="img/index/documents/pdf.png" alt="pdf"></a>
                     <a href="https://drive.google.com/file/d/1wNFZT2YpSGPAW2F1frRjTJvM3WyqVrhb/view?usp=sharing"
-                        target="_blank">Статут ГО "ДІМ"</a>
+                        class="documents-card-text" target="_blank">Статут ГО "ДІМ"</a>
                 </div>
-                <div>
+                <div class="documents-card">
                     <a href="https://drive.google.com/file/d/1I4eKzn3JbQ82_nxK-smeEiNMt4TIWJZf/view?usp=sharing"
-                        target="_blank"><img src="img/index/documents/pdf.png" alt=""></a>
+                        target="_blank"><img class="documents-card-img" src="img/index/documents/pdf.png" alt="pdf"></a>
                     <a href="https://drive.google.com/file/d/1I4eKzn3JbQ82_nxK-smeEiNMt4TIWJZf/view?usp=sharing"
-                        target="_blank">Протокол засновників ГО "ДІМ"</a>
+                        class="documents-card-text" target="_blank">Протокол засновників<br>ГО "ДІМ"</a>
                 </div>
-                <div>
+                <div class="documents-card">
                     <a href="https://drive.google.com/file/d/1rHv85js32ul8umla_hu1q3SdNIqpqnli/view?usp=sharing"
-                        target="_blank"><img src="img/index/documents/pdf.png" alt=""></a>
+                        target="_blank"><img class="documents-card-img" src="img/index/documents/pdf.png" alt="pdf"></a>
                     <a href="https://drive.google.com/file/d/1rHv85js32ul8umla_hu1q3SdNIqpqnli/view?usp=sharing"
-                        target="_blank">Виписка з ЄДР</a>
+                        class="documents-card-text" target="_blank">Виписка з ЄДР</a>
                 </div>
             </div>
         </section>
-        <!-- <section class="contact-form">
-            <div>
+        <section class="contact-form">
+            <div class="contact-form-block container">
                 <div>
-                    <h2>Хочете знати більше?</h2>
-                    <h3>Зателефонуйте або пишіть нам, щоб дізнатися більше чи запропонувати Ваші ідеї</h3>
+                    <div class="contact-form-text">
+                        <h2>Хочете знати більше?</h2>
+                        <h3>Зателефонуйте або пишіть нам, щоб дізнатися більше чи запропонувати Ваші ідеї</h3>
+                    </div>
+                    <div>
+                        <button class="accordion">Якого віку діти можуть брати учать в таборі?</button>
+                        <div class="panel">
+                            <p>Діти з 7 до 13 років будуть прийняті в табір.</p>
+                        </div>
+                        <hr class="line">
+                        <button class="accordion">Години проведення табору?</button>
+                        <div class="panel">
+                            <p>Табір працює з 10:00 до 17:00. </p>
+                        </div>
+                        <hr class="line">
+                        <button class="accordion">Коли проводяться покази документального кіно?</button>
+                        <div class="panel">
+                            <p>Кіноклуб Docudays UA при Громадській організації "Добротвірська ініціативна молодь" проводить покази документального кіно один раз на місяць (деталі у новинах).</p>
+                        </div>
+                        <hr class="line">
+                        <button class="accordion">Як долучитися до команди ГО "ДІМ"?</button>
+                        <div class="panel">
+                            <p>Заповніть анкету, щоб бути першим/першою, хто дізнається про старт нового набору волонтерів/аніматорів.
+                                ! Волонтером можливо стати ЛИШЕ досягнувши 14-ти років.</p>
+                        </div>
+                        <hr class="line">
+                    </div>
                 </div>
-            </div>
-            <div>
-                <form>
-                    <input class="" type="text" name="user-name" placeholder="Ваше ім'я" required>
-                    <input class="" type="tel" name="user-tel" placeholder="Номер телефону" required>
-                    <input class="" type="text" name="user-email" placeholder="Email" required>
-                    <input class="" type="text" name="user-message" placeholder="Напишіть Ваше повідомлення" required>
-                    <button class="">Надіслати</button>
-                </form>
+                <div>
+                    <form class="contact-form" action="https://formspree.io/f/mayvwnoq" method="POST">
+                        <input class="" type="text" name="user-name" placeholder="Ваше ім'я" required>
+                        <input class="" type="tell" name="user-tell" placeholder="Номер телефону" required>
+                        <input class="" type="email" name="user-email" placeholder="Email" required>
+                        <input class="" type="text" name="user-message" placeholder="Напишіть Ваше повідомлення"
+                            required>
+                        <button class="" type="submit">Надіслати</button>
+                        <p id="contact-form-status"></p>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
-    <footer id="footer">
+    <!-- <footer id="footer">
         <div>
             <div>
                 <a href="https://www.facebook.com/NG0DIM" target="_blank"><img src="img/footer/facebook.png"
@@ -289,7 +318,9 @@
             <p>All rights Reserved</p>
         </div>
     </footer>-->
-        <script src="js/index-carrousel.js"></script>
+    <script src="js/index-carrousel.js"></script>
+    <script src="js/index-accordion.js"></script>
+    
 </body>
 
 </html>

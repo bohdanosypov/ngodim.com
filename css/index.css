@@ -651,7 +651,7 @@
 }
 
 .contact-form-card{
-    margin: 10px 15px;
+    margin: 10px 30px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 10px 10px 20px rgba(0,0,0,0.1);
@@ -853,7 +853,7 @@ footer{
     padding: 5px 0 15px;
 }
 
-.footer-map{
+.footer-map > iframe{
     margin: auto;
     width: 272px;
 }
@@ -906,14 +906,27 @@ footer{
 @media (min-width: 992px){
     .footer-follow{
         grid-template-columns: 1fr 1fr 1fr;
+        padding-right: 90px;
+    }
+    .footer-map > iframe{
+        width: 400px;
+        height: 268px;
+    }
+    .menu-line{
+        width: 10% ;
+    }
+    .footer-logo{
+        margin: 0;
+        padding: 0 15px;
     }
 }
 
 .container-footer{
-    
     margin: auto;
     max-width: 1200px;
 }
+
+
 
 
 

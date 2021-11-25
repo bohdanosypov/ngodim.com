@@ -31,6 +31,11 @@
     font-weight: 600;
 }
 
+.nav-header > a:hover{
+    color:#FBFF3C;
+    transition: 0.5s;
+}
+
 .follow-header{
     text-align: center;
 }
@@ -38,6 +43,15 @@
 .follow-header > a{
     padding: 8px;
 }
+
+.follow-header > a > img{
+    border-radius: 20%;
+}
+
+.follow-header > a:hover{
+   color: rgba(255, 255, 255, 0.3);
+}
+
 
 @media (min-width: 992px){
     .header-block{
@@ -116,6 +130,11 @@ footer{
     text-decoration: none;
 }
 
+.footer-contact-card > a:hover{
+    color: white;
+    transition: 0.5s;
+}
+
 .footer-line{
     height:1px;
     width:100%;
@@ -164,6 +183,10 @@ footer{
     margin: 10px auto;
 }
 
+.footer-logo-nav-map{
+    padding-top: 15px;
+}
+
 .footer-nav{
     display: grid;
 }
@@ -177,6 +200,11 @@ footer{
     line-height: 20px;
     color: rgba(255,255,255,0.72);
     padding: 5px 0 15px;
+}
+
+.footer-nav > a:hover{
+    color: white;
+    transition: 0.5s;
 }
 
 .footer-map > iframe{
@@ -240,6 +268,7 @@ footer{
     }
     .menu-line{
         width: 10% ;
+        margin: -5px auto;
     }
     .footer-logo{
         margin: 0;

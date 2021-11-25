@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.about{
+    padding: 25px 15px 30px;
+}
+
+.about-text{
+    text-align: center;
+    padding-bottom:  30px;
+}
+
+.about-text > h2{
+    font-family: "Rubik", sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    color: #225bc1;
+}
+
+.about-block{
+    display: grid;
+    padding: 0 15px;
+}
+
+.about-cards{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.about-cards-photo{
+    width: 100%;
+    height: 290px;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.about-cards > h2{
+    font-family: "Rubik", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 31px;
+    color: #303031;
+    padding: 20px 0 15px;
+}
+
+.about-cards > h4{
+    font-family: "Fira Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    color: #828285;
+    padding: 0 0 10px;
+}
+
+.about-card-follows > a > img{
+    width: 30px;
+    padding: 10px 8px 10px;
+    border-radius: 30%;
+}
+
+.about-cards > a{
+    font-family: "Fira Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    color: #828285;
+    text-decoration: none;
+}
+
+.about-cards > a:hover{
+    color: #000;
+    transition: 0.5s;
+}
+
+.bohdanosypov{
+    background-image: url(../img/about/bohdanosypov.jpg);
+}
+
+.zubdenys{
+    background-image: url(../img/about/denyszub.JPG);
+}
+
+.nataliamoroz{
+    background-image: url(../img/about/nataliamoroz.jpg);
+    background-position-y: 50%;
+}
+
+.khrystynaboitsun{
+    background-image: url(../img/about/khrisinaboitsyn.jpg);
+    background-position-y: 50%;
+}
+
+.zgyrskaolga{
+    background-image: url(../img/about/olyazgurska.jpg);
+    background-position-y: 50%;
+}
+
+.zayatsvikaa{
+    background-image: url(../img/about/vikazayats.jpg);
+}
+
+.vikamuranets{
+    background-image: url(../img/about/vikamuranets.jpg);
+    background-position-y: 10%;
+}
+
+.marianazahoroda{
+    background-image: url(../img/about/marainazahoroda.jpg);
+    background-position-y: 50%;
+}
+
+.roksolanademkovic{
+    background-image: url(../img/about/roksolanademkovic.jpg);
+}
+
+.mariamuranets{
+    background-image: url(../img/about/mariamuranets.jpg);
+}
+
+
+@media (min-width: 768px){
+    .about-block{
+        grid-template-columns: 1fr 1fr;
+    }
+    .about-cards{
+        padding: 0 15px;
+    }
+    .about-cards-photo{
+        height: 354px;
+    }
+    .zubdenys{
+        background-position-y: 20%;
+    }
+}
+
+@media (min-width: 992px){
+    .about-block{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .zayatsvikaa{
+        background-position-x: center;
+    }
+}
+
+@media (min-width: 1150px){
+    .about-cards-photo{
+        height: 364px;
+    }
+}

@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="uk" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content='Громадська організація "Добротвірська ініціативна молодь" | ngodim.com'/>
+    <meta property="og:image" content="https://ngodim.com/img/header/logo-header.png">
+    <meta property="og:description" content="Ми - активна та ініціативна молодь Добротвірської громади. Беремо активну участь у розвитку дітей та молоді нашого містечка і отримуємо від цього задоволення."/>
     <link rel="stylesheet" href="css/header-footer.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/index-carrousel.css">
@@ -18,7 +21,7 @@
 </head>
 
 <body>
-    <header id="header">
+    <header id="header">w
         <div class="header-block container">
             <div>
                 <a href="index.html"><img src="img/header/logo-header.png" class="logo-header" alt="Логотип ГО ДІМ"></a>
@@ -257,14 +260,15 @@
                     </div>
                 </div>
                 <div class="contact-form-card">
-                    <form class="form">
-                        <input type="text" name="user-name" placeholder="Ваше ім'я" required>
-                        <input type="tel" name="user-tel" placeholder="Номер телефону" required>
-                        <input type="email" name="user-email" placeholder="Email" required>
-                        <textarea class="form-message" name="user-message" placeholder="Напишіть Ваше повідомлення"
-                            required></textarea>
-                        <button class="form-button" type="submit">Надіслати</button>
-                        <p class="contact-form-status"></p>
+                    <form class="form" >
+                        <input type="text" name="user-name" placeholder="Ваше ім'я">
+                        <p class="namef"></p>
+                        <!-- <input type="text" name="user-tel" placeholder="Номер телефону"> -->
+                        <input type="text" name="user-email" placeholder="Email">
+                        <p class="emailf"></p>
+                        <!-- <textarea class="form-message" name="user-message" placeholder="Напишіть Ваше повідомлення"></textarea> -->
+                        <input type='submit' onsubmit='return validate()' value='Отправить форму'><!-- <input class="form-button" type="submit">Надіслати</input> -->
+                        <!-- <p class="contact-form-status"></p> -->
                     </form>
                 </div>
             </div>
@@ -331,7 +335,7 @@
     </footer>
     <script src="js/index-carrousel.js"></script>
     <script src="js/index-accordion.js"></script>
-
+    <script src="js/index.js"></script>
 </body>
 
 </html>

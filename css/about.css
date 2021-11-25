@@ -116,6 +116,7 @@
 
 .roksolanademkovic{
     background-image: url(../img/about/roksolanademkovic.jpg);
+    background-position-y: center;
 }
 
 .mariamuranets{
@@ -136,6 +137,9 @@
     .zubdenys{
         background-position-y: 20%;
     }
+    .about-spase{
+        display: none;
+    }
 }
 
 @media (min-width: 992px){
@@ -144,6 +148,9 @@
     }
     .zayatsvikaa{
         background-position-x: center;
+    }
+    .about-spase{
+        display: block;
     }
 }
 

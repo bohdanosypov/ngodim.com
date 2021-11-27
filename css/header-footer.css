@@ -209,7 +209,8 @@ footer{
 
 .footer-map > iframe{
     margin: auto;
-    width: 272px;
+    width: 100%;
+    height: 100%;
 }
 
 .created-by{

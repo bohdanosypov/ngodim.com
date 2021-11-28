@@ -10,7 +10,7 @@
 }
 
 .main-photo{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/index/main-ngo-dim.webp);
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/index/main-ngo-dim.avif);
     height: 610px;
     background-size: cover;
     background-position: center;
@@ -448,15 +448,15 @@
 }
 
 .card-img-holiday{
-    background-image: url(../img/index/projects/holiday.jpg);
+    background-image: url(../img/index/projects/holiday.avif);
 }
 
 .card-img-camps{
-    background-image: url(../img/index/projects/camps.jpg);
+    background-image: url(../img/index/projects/camps.avif);
 }
 
 .card-img-mykolia{
-    background-image: url(../img/index/projects/mykolia.jpg);
+    background-image: url(../img/index/projects/mykolia.avif);
 }
 
 .projects-card > p{

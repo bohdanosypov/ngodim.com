@@ -669,18 +669,20 @@
 
 .form > input{
     width: 50%;
-    margin-top: 12px;
+    margin: 18px auto;
     padding: 16px 24px;
     border-radius: 10px;
     background-color: #F8F8F8;
     border: none;
     font-family: "Fira Sans", sans-serif;
+    
 }
 
 .form-message{
     width: 50%;
     min-height: 150px;
     margin-top: 12px;
+    margin-bottom: 18px;
     padding: 16px 17px;
     border-radius: 10px;
     background-color: #F8F8F8;
@@ -709,6 +711,8 @@
     font-weight: bold;
     border: none;
 }
+
+
 
 .form-button:hover {
     transition: 1s;

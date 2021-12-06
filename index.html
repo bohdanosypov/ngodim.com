@@ -284,16 +284,21 @@
                     </div>
                 </div>
                 <div class="contact-form-card">
-                    <form class="form" action="#" method="post">
-                        <input type="text" name="user-name" placeholder="Ваше ім'я">
-                        <p class="namef"></p>
-                        <input type="tel" name="user-tel" placeholder="Номер телефону">
-                        <input type="text" name="user-email" placeholder="Email">
-                        <p class="emailf"></p>
-                        <textarea class="form-message" name="user-message"
+                    <form class="form" action="#" method="post" id="contact_form">
+                        <input type="text" name="user-name" id="user_name" placeholder="Ваше ім'я">
+                        <p id="form_input_name_mistake_message"></p>
+                        
+                        <input type="text" name="user-email" id="user_email" placeholder="Email">
+                        <p id="form_input_email_mistake_message"></p>
+
+                        <input type="text" name="user-subject" id="user_subject" placeholder="Тема повідомлення">
+                        <p id="form_input_subject_mistake_message"></p>
+                        
+                        <textarea class="form-message" name="user-message" id="user_message"
                             placeholder="Напишіть Ваше повідомлення"></textarea>
+                        <p id="form_message_textarea_mistake_message"></p>
                         <button class="form-button" type="submit">Надіслати</button>
-                        <!-- <p class="contact-form-status"></p> -->
+                        
                     </form>
                 </div>
             </div>
@@ -358,8 +363,8 @@
             </div>
         </div>
     </footer>
-    <script src="js/index-carrousel.js"></script>
-    <script src="js/index-accordion.js"></script>
+    <!-- <script src="js/index-carrousel.js"></script>
+    <script src="js/index-accordion.js"></script> -->
     <script src="js/index.js"></script>
 </body>
 

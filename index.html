@@ -50,7 +50,7 @@
             <div>
                 <a href="#"><img src="img/header/logo-header.png" class="logo-header" alt="Логотип ГО ДІМ"></a>
             </div>
-            <nav class="nav-header">
+            <nav class="nav-header" id="header_navbar">
                 <a href="about" target="_blank">Про нас</a>
                 <a href="news" target="_blank">Новини</a>
                 <a href="#projects">Заходи</a>
@@ -67,6 +67,7 @@
         </div>
     </header>
     <main>
+        <button onclick="topFunction()" id="myBtn" title="Піднятися на верх"><img src="/img/index/arrow-up.png"></button>
         <section class="main-photo">
             <div class="main-photo-text container">
                 <h1>Добротвірська ініціативна молодь</h1>
@@ -179,15 +180,15 @@
             </div>
             <div class="projects-blocks container">
                 <div class="projects-card">
-                    <div class="projects-card-img card-img-holiday"></div>
+                    <div class="projects-card-img card-img-holiday" id="card-img-holiday"></div>
                     <p>Державні свята</p>
                 </div>
                 <div class="projects-card">
-                    <div class="projects-card-img card-img-camps"></div>
+                    <div class="projects-card-img card-img-camps" id="card-img-camps"></div>
                     <p>Табори</p>
                 </div>
                 <div class="projects-card">
-                    <div class="projects-card-img card-img-mykolia"></div>
+                    <div class="projects-card-img card-img-mykolia" id="card-img-mykolia"></div>
                     <p>День Святого Миколая</p>
                 </div>
             </div>
@@ -363,9 +364,11 @@
             </div>
         </div>
     </footer>
-    <!-- <script src="js/index-carrousel.js"></script>
-    <script src="js/index-accordion.js"></script> -->
+    <script src="js/index-carrousel.js"></script>
+    <script src="js/index-accordion.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/index-listeners.js"></script>
+    <script src="js/black-theme.js"></script>
 </body>
 
 </html>

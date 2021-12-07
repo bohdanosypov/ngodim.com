@@ -101,14 +101,14 @@
     left: -10px;
     top: 40%;
     display: block;
-    background: url("http://pvbk.spb.ru/inc/carousel/ant-files/ant-arrow-left.png") no-repeat;
+    background: url(/img/index/gallery/ant-arrow-left.png) no-repeat;
   }
   
   div.ant-carousel-arrow-right {
     right: -11px;
     top: 40%;
     display: block;
-    background: url("http://pvbk.spb.ru/inc/carousel/ant-files/ant-arrow-right.png") no-repeat;
+    background: url(/img/index/gallery/ant-arrow-right.png)  no-repeat;
   }
 
   

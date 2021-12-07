@@ -2,31 +2,28 @@ function hasOnlySpaces(str) {
    return str.trim().length === 0;
 }
 function hasSpacesBeforeAfterValue(str) {
-   ////////////////////
+
    if (str.length > str.trim().length) {
       console.log('hasSpacesBeforeAfterValue');
    }
-   ////////////////////
+
    return str.length > str.trim().length;
 }
 function isEmptyField(str) {
-   ////////////////////
    if (str.length === 0 || hasOnlySpaces(str)) {
       console.log('isEmptyField');
    }
-   ////////////////////
    return str.length === 0 || hasOnlySpaces(str);
 }
 function isNumeric(n) {
    if (n === ' ') {
       return false;
    }
-   ////////////////////
+   
    if (!isNaN(n)) {
       console.log('isNumeric');
    }
-   5
-   ////////////////////
+   
    return !isNaN(n);
 }
 function isNumericCode(n) {
@@ -61,9 +58,9 @@ function onlyOneCommercialAt(str) {
       }
    }
    if (count != maxMinCount) {
-      ////////////////////
+
       console.log('not onlyOneCommercialAt');
-      ////////////////////
+
       return false;
    }
    return true;
@@ -89,15 +86,15 @@ function validEmailLogin(str) {
    for (let i = 0; i < str.length; i++) {
       if (!(isLatinCode(str[i]) || isNumericCode(str[i]) || str[i].charCodeAt(0) ==
          dotCode)) {
-         ////////////////////
+
          console.log('!(isLatinCode || isNumericCode || str[i].charCodeAt(0) == dotCode)');
-         ////////////////////
+
          return false;
       }
       if (str[i].charCodeAt(0) == dotCode && i == 0) {
-         ////////////////////
+
          console.log('dot first');
-         ////////////////////
+
          return false;
       }
    }
@@ -113,16 +110,15 @@ function validEmailDomain(str) {
    let dotCode = 46;
    for (let i = 0; i < str.length; i++) {
       if (!(isLatinCode(str[i]) || str[i].charCodeAt(0) == dotCode)) {
-         ////////////////////
-         7
+
          console.log('!(isLatinCode || str[i].charCodeAt(0) == dotCode)');
-         ////////////////////
+  
          return false;
       }
       if (str[i].charCodeAt(0) == dotCode && i == 0) {
-         ////////////////////
+
          console.log('dot first');
-         ////////////////////
+
          return false;
       }
    }
@@ -158,7 +154,6 @@ function validSubject(str) {
    if (isEmptyField(str)) {
       return false;
    }
-   8
    if (hasSpacesBeforeAfterValue(str)) {
       return false;
    }
@@ -180,7 +175,8 @@ function removeFirstTag(item) {
 }
 function addMessageTag(item, message) {
    let newItem = document.createElement('p');
-   newItem.style.marginTop = "-4px";
+   newItem.style.marginTop = "-15px";
+   newItem.style.marginBottom = "-10px";
    newItem.style.right = "50%";
    newItem.style.color = "red";
    newItem.innerHTML = message;
@@ -200,7 +196,6 @@ let mistakeMessageUserEmail =
    document.getElementById('form_input_email_mistake_message');
 let mistakeMessageUserSubject =
    document.getElementById('form_input_subject_mistake_message');
-9
 let mistakeMessageUserMessage =
    document.getElementById('form_message_textarea_mistake_message');
 let mistakeMessageCheckboxConsent =
@@ -244,7 +239,6 @@ textareaUserMessage.addEventListener('blur', function (e) {
    removeFirstTag(mistakeMessageUserMessage);
    let textareaUserMessageValue = textareaUserMessage.value;
    if (validMessage(textareaUserMessageValue)) {
-      10
       validTextareaUserMessage = true;
    } else {
       addMessageTag(mistakeMessageUserMessage, 'Ви не ввели повідомлення!');
@@ -255,10 +249,7 @@ checkboxConsent.addEventListener('click', function (e) {
    removeFirstTag(mistakeMessageCheckboxConsent);
    if (validCheckbox(checkboxConsent)) {
       validCheckboxConsent = true;
-   } //else {
-   //    addMessageTag(mistakeMessageCheckboxConsent, 'Ви не дали згоду на обробку особистих даних!')
-   // validCheckboxConsent = false;
-   // }
+   } 
 });
 form.addEventListener('submit', function (e) {
    e.preventDefault();
@@ -285,7 +276,6 @@ form.addEventListener('submit', function (e) {
    if (validTextareaUserMessage) {
       countValid++;
    } else {
-      11
       removeFirstTag(mistakeMessageUserMessage);
       addMessageTag(mistakeMessageUserMessage, 'Ви не ввели повідомлення!');
    }
@@ -303,58 +293,3 @@ form.addEventListener('submit', function (e) {
 
 
 
-//    Лістинг коду з файлу listeners.js:
-// let coordinatesShowHideArrow = 900;
-// let scroll_btn = document.querySelector('.is_show_btn');
-// window.addEventListener('scroll', function (e) {
-//    if (window.scrollY > coordinatesShowHideArrow) {
-//       scroll_btn.classList.remove('is_show_btn_hide');
-//    } else if (window.scrollY <= coordinatesShowHideArrow) {
-//       scroll_btn.classList.add('is_show_btn_hide');
-//    }
-// });
-// scroll_btn.addEventListener('click', function (e) {
-//    if (window.scrollY > coordinatesShowHideArrow) {
-//       window.scrollTo(0, 0);
-//    }
-// });
-// let effectMouseOverFilter = "grayscale(100%)";
-// let effectMouseOutFilter = "grayscale(0)";
-// let effectTransition = "0.8s";
-// let employeesItem1Photo = document.getElementById('employees_item_1_photo');
-// employeesItem1Photo.style.filter = effectMouseOverFilter;
-// employeesItem1Photo.style.transition = effectTransition;
-// employeesItem1Photo.addEventListener('mouseover', function (e) {
-//    employeesItem1Photo.style.filter = effectMouseOutFilter;
-// });
-// employeesItem1Photo.addEventListener('mouseout', function (e) {
-//    employeesItem1Photo.style.filter = effectMouseOverFilter;
-// });
-// 12
-// let employeesItem2Photo = document.getElementById('employees_item_2_photo');
-// employeesItem2Photo.style.filter = effectMouseOverFilter;
-// employeesItem2Photo.style.transition = effectTransition;
-// employeesItem2Photo.addEventListener('mouseover', function (e) {
-//    employeesItem2Photo.style.filter = effectMouseOutFilter;
-// });
-// employeesItem2Photo.addEventListener('mouseout', function (e) {
-//    employeesItem2Photo.style.filter = effectMouseOverFilter;
-// });
-// let employeesItem3Photo = document.getElementById('employees_item_3_photo');
-// employeesItem3Photo.style.filter = effectMouseOverFilter;
-// employeesItem3Photo.style.transition = effectTransition;
-// employeesItem3Photo.addEventListener('mouseover', function (e) {
-//    employeesItem3Photo.style.filter = effectMouseOutFilter;
-// });
-// employeesItem3Photo.addEventListener('mouseout', function (e) {
-//    employeesItem3Photo.style.filter = effectMouseOverFilter;
-// });
-// let employeesItem4Photo = document.getElementById('employees_item_4_photo');
-// employeesItem4Photo.style.filter = effectMouseOverFilter;
-// employeesItem4Photo.style.transition = effectTransition;
-// employeesItem4Photo.addEventListener('mouseover', function (e) {
-//    employeesItem4Photo.style.filter = effectMouseOutFilter;
-// });
-// employeesItem4Photo.addEventListener('mouseout', function (e) {
-//    employeesItem4Photo.style.filter = effectMouseOverFilter;
-// });

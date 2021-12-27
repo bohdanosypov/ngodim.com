@@ -160,8 +160,8 @@
 }
 
 .about-numbers{
-    background-color: #F8F8F8;
     padding-top: 40px;
+    background-color: #F8F8F8;
 }
 
 .about-numbers-footer{
@@ -600,6 +600,11 @@
     width: 70px;
 }
 
+.documents-card-img:hover{
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
 .documents-card-text{
     font-family: "Fira Sans", sans-serif;
     font-size: 20px;
@@ -608,6 +613,11 @@
     line-height: 30px;
     text-decoration: none;
     padding: 10px;
+}
+
+.documents-card-text:hover{
+    opacity: 0.8;
+    transition: 0.3s;
 }
 
 @media (min-width: 768px){
@@ -620,8 +630,8 @@
 }
 
 .contact-form{
-    background-color: #F8F8F8;
     padding: 90px 25px;
+    background-color: #F8F8F8;
 }
 
 .contact-form-block{
@@ -755,3 +765,4 @@
 #myBtn:hover {
     background-color: #FBFF3C; 
 }
+

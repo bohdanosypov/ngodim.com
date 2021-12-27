@@ -16,6 +16,11 @@
     padding: 30px auto;
 }
 
+.logo-header:hover{
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
 .nav-header{
     display: flex;
     flex-direction: column;
@@ -33,7 +38,7 @@
 
 .nav-header > a:hover{
     color:#FBFF3C;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .follow-header{
@@ -46,13 +51,16 @@
 
 .follow-header > a > img{
     border-radius: 20%;
+    
 }
 
 .follow-header > a:hover{
    color: rgba(255, 255, 255, 0.3);
+   opacity: 0.8;
+   transition: 0.3s;
+
 }
-
-
+ 
 @media (min-width: 992px){
     .header-block{
         display: grid;
@@ -70,7 +78,6 @@
         width: 286px;
     }
 }
-
 
 
 .footer-top{
@@ -100,6 +107,11 @@ footer{
 
 .footer-follow > a > img{
     width: 48px;
+}
+
+.footer-follow > a:hover{
+    opacity: 0.8;
+    transition: 0.3s;
 }
 
 .footer-contact{
@@ -150,6 +162,11 @@ footer{
 
 .footer-logo > a > img{
     width: 100%;
+}
+
+.footer-logo > a:hover{
+    opacity: 0.8;
+    transition: 0.3s;
 }
 
 .footer-logo > h5{

@@ -45,12 +45,12 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PMBRRCW" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <header id="header">
+    <header>
         <div class="header-block container">
             <div>
                 <a href="#"><img src="img/header/logo-header.png" class="logo-header" alt="Логотип ГО ДІМ"></a>
             </div>
-            <nav class="nav-header" id="header_navbar">
+            <nav class="nav-header" id="navbar"> 
                 <a href="about" target="_blank">Про нас</a>
                 <a href="news" target="_blank">Новини</a>
                 <a href="#projects">Заходи</a>
@@ -82,19 +82,19 @@
                     працю, подорожі об'єднує молодь громади.</h3>
             </div>
             <div class="about-us-blocks container">
-                <div class="about-us-card">
+                <div class="about-us-card lab">
                     <img src="img/index/about-us/icon-team.png" alt="Hand">
                     <h3>Об'єднуємо</h3>
                     <hr>
                     <p>Місцеву молодь задля розвитку громади</p>
                 </div>
-                <div class="about-us-card">
+                <div class="about-us-card lab1">
                     <img src="img/index/about-us/icon-experience.png" alt="Volunteer">
                     <h3>Волонтеримо</h3>
                     <hr>
                     <p>Наша діяльність спрямована на залучення молоді до реалізації проектів</p>
                 </div>
-                <div class="about-us-card">
+                <div class="about-us-card lab2">
                     <img src="img/index/about-us/icon-idea.png" alt="Idea">
                     <h3>Створюємо</h3>
                     <hr>
@@ -129,8 +129,8 @@
                     <h2>Дитячий табір</h2>
                     <hr>
                     <p>Щорічно наша команда організовує проведення дитячих таборів. Усіма силами ми намагаємося залишити
-                        приємний спогад у дитячій пам’яті про літо.</p>
-                    <p>Наші волонтери стають не просто наставниками для дітлахів, але і справжніми друзями. Ми
+                        приємний спогад у дитячій пам’яті про літо.<br>
+                    Наші волонтери стають не просто наставниками для дітлахів, але і справжніми друзями. Ми
                         намагаємося
                         постійно змінювати концепцію табору, щоб дивувати вас знову і знову.</p>
                 </div>
@@ -287,17 +287,10 @@
                 <div class="contact-form-card">
                     <form class="form" action="#" method="post" id="contact_form">
                         <input type="text" name="user-name" id="user_name" placeholder="Ваше ім'я">
-                        <p id="form_input_name_mistake_message"></p>
-                        
-                        <input type="text" name="user-email" id="user_email" placeholder="Email">
-                        <p id="form_input_email_mistake_message"></p>
-
-                        <input type="text" name="user-subject" id="user_subject" placeholder="Тема повідомлення">
-                        <p id="form_input_subject_mistake_message"></p>
-                        
+                        <input type="email" name="user-email" id="user_email" placeholder="Email">
+                        <input type="tel" name="user-tell" id="user_tell" placeholder="Номер телефону">
                         <textarea class="form-message" name="user-message" id="user_message"
                             placeholder="Напишіть Ваше повідомлення"></textarea>
-                        <p id="form_message_textarea_mistake_message"></p>
                         <button class="form-button" type="submit">Надіслати</button>
                         
                     </form>
@@ -366,9 +359,7 @@
     </footer>
     <script src="js/index-carrousel.js"></script>
     <script src="js/index-accordion.js"></script>
-    <script src="js/index.js"></script>
     <script src="js/index-listeners.js"></script>
-    <script src="js/black-theme.js"></script>
 </body>
 
 </html>

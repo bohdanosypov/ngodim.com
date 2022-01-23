@@ -47,6 +47,46 @@
     padding: 10px;
 }
 
+.main-button{
+    text-decoration: none;
+    background-color: #FBFF3C;
+    color: #303031;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    
+}
+
+.main-button > span{
+    background-image: url(/img/credit-card-black.png);
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+    padding: 19px;
+    background-size: contain;
+    background-position: 25%;
+}
+.main-button > span:hover{
+    background-image: url(/img/credit-card-black.png);
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+    padding: 19px;
+    background-size: contain;
+    background-position: 25%;
+}
+
+
+.main-button:hover{
+    background-color: transparent;
+    border: 2px solid  #FBFF3C;
+    color: #F8F8F8;
+}
+
+
 @media (min-width: 992px){
     .main-photo{
         height: 820px;
@@ -492,7 +532,7 @@
 .projects-button > a:hover{
     background-color: #225bc1;
     color: #F8F8F8;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .projects-bottom{
@@ -726,7 +766,7 @@
 
 
 .form-button:hover {
-    transition: 1s;
+    transition: 0.5s;
     background-color:#225bc1;
     color: white;
 }

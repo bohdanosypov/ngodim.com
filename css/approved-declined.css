@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+
+.main-pay{
+    background-color: #F8F8F8;
+    text-align: center;
+    padding: 40px;
+}
+
+.img-pay > img{
+    width: 70px;
+    margin: 40px auto;
+}
+
+.text-pay{
+    margin: 15px auto 30px;
+}
+
+.text-pay > h2{
+    font-family: "Rubik", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #303031;
+    padding-bottom: 20px;
+}
+
+.text-pay > p{
+    font-family: "Fira Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #828285;
+}
+
+.button-pay-approved{
+    padding-top: 30px;
+}
+.button-pay-approved > a{
+    text-decoration: none;
+    background-color: #FBFF3C;
+    color: #303031;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+
+.button-pay-approved > a:hover{
+    background-color: #225bc1;
+    color: #F8F8F8;
+    transition: 0.5s;
+}
+
+.button-pay-declined{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.url-index-declined{
+    text-decoration: none;
+    background-color: #FBFF3C;
+    color: #303031;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    width: 74px;
+}
+
+.url-index-declined:hover{
+    background-color: #225bc1;
+    color: #F8F8F8;
+    transition: 0.5s;
+}
+
+.url-return-declined{
+    text-decoration: none;
+    background-color: transparent;
+    color: #303031;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    border: 2px solid  #225bc1;
+    padding: 15px 30px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    width: 137px;
+}
+
+.url-return-declined:hover{
+    /* background-color: #225bc1; */
+    color: #7c7c7c;
+    border: 2px solid  #FBFF3C;
+    transition: 0.5s;
+}
+
+
+@media (min-width: 768px){
+    .img-pay > img{
+        width: 120px;
+    }
+    .text-pay > h2{
+        font-size: 28px;
+    }
+}
+

@@ -57,27 +57,15 @@
     line-height: 16px;
     padding: 15px 30px;
     border-radius: 5px;
-    
+   
 }
 
-.main-button > span{
-    background-image: url(/img/credit-card-black.png);
-    width: 16px;
-    height: 16px;
-    margin-left: 10px;
-    padding: 19px;
-    background-size: contain;
-    background-position: 25%;
+.main-button > i{
+    position: relative;
+    top: 3px;
+    left: 2px;
 }
-.main-button > span:hover{
-    background-image: url(/img/credit-card-black.png);
-    width: 16px;
-    height: 16px;
-    margin-left: 10px;
-    padding: 19px;
-    background-size: contain;
-    background-position: 25%;
-}
+
 
 
 .main-button:hover{
@@ -337,7 +325,7 @@
     background-image: url(../img/index/docudays/poster.jpg);
     height: 220px;
     background-size: cover;
-    background-position-y: 55%;
+    background-position-y: 60%;
 }
 
 .docudays-info{

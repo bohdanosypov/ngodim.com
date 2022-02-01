@@ -50,22 +50,28 @@
     <header>
         <div class="header-block container">
             <div>
-                <a href="#"><img src="img/header/logo-header.png" class="logo-header" alt="Логотип ГО ДІМ"></a>
+                <a href="index"><img src="img/header/logo-header.png" class="logo-header" alt="Логотип ГО ДІМ"></a>
+            </div>
+            <div class="menu__icon">
+                <span></span>
             </div>
             <nav class="nav-header" id="navbar">
-                <a href="about" target="_blank">Про нас</a>
-                <a href="news" target="_blank">Новини</a>
-                <a href="#projects">Заходи</a>
-                <a href="#gallery">Галерея</a>
-                <a href="#footer">Контакти</a>
+                <ul class="menu__list">
+                    <li><a href="about" target="_blank" class="menu__link">Про нас</a></li>
+                    <li><a href="news" target="_blank" class="menu__link">Новини</a></li>
+                    <li><a href="#" data-goto="#projects" class="menu__link">Заходи</a></li>
+                    <li><a href="#" data-goto="#gallery" class="menu__link">Галерея</a></li>
+                    <li><a href="#" data-goto="#footer" class="menu__link">Контакти</a></li>
+                    <div class="follow-header">
+                        <a href="https://www.facebook.com/NG0DIM" target="_blank"><img src="img/header/facebook.png"
+                                alt="Facebook"></a>
+                        <a href="https://t.me/ngodim" target="_blank"><img src="img/header/telegram.png"
+                                alt="Telegram"></a>
+                        <a href="https://www.instagram.com/ngo__dim/" target="_blank"><img
+                                src="img/header/instagram.png" alt="Instagram"></a>
+                    </div>
+                </ul>
             </nav>
-            <div class="follow-header">
-                <a href="https://www.facebook.com/NG0DIM" target="_blank"><img src="img/header/facebook.png"
-                        alt="Facebook"></a>
-                <a href="https://t.me/ngodim" target="_blank"><img src="img/header/telegram.png" alt="Telegram"></a>
-                <a href="https://www.instagram.com/ngo__dim/" target="_blank"><img src="img/header/instagram.png"
-                        alt="Instagram"></a>
-            </div>
         </div>
     </header>
     <main>
@@ -76,8 +82,8 @@
                 <h1>Добротвірська ініціативна молодь</h1>
                 <hr>
                 <h2>Молодіжна громадська організація</h2>
-                <!-- <br><br>
-                <a href="https://secure.wayforpay.com/payment/ngodim" class="main-button">Підтримати<span></span></a> -->
+                <br><br>
+                <a href="https://secure.wayforpay.com/payment/ngodim" class="main-button">Підтримати<span></span></a>
             </div>
         </section>
         <section class="about-us">
@@ -290,18 +296,19 @@
                 </div>
                 <div class="contact-form-card">
                     <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeRU0b2lCwEEjSrtY8nUe5UQ_wqOFssgLqjxKgwdVMJE-P_GQ/viewform?embedded=true">Завантаження…</iframe> -->
-                    <form name="gform" class="form" id="gform" method="POST" action="https://getform.io/f/a1bb97d2-660a-41dd-9bf6-7bdedfe8d264">
+                    <form name="gform" class="form" id="gform" method="POST"
+                        action="https://getform.io/f/a1bb97d2-660a-41dd-9bf6-7bdedfe8d264">
                         <input type="text" name="name" id="" placeholder="Ваше ім'я" required>
                         <input type="email" name="email" id="" placeholder="Email" required>
                         <input type="tel" name="tell" id="" placeholder="Номер телефону" required>
-                        <textarea class="form-message" name="message" id=""
-                            placeholder="Напишіть Ваше повідомлення" required></textarea>
+                        <textarea class="form-message" name="message" id="" placeholder="Напишіть Ваше повідомлення"
+                            required></textarea>
                         <button type="submit" class="form-button">Надіслати</button>
 
                     </form>
-                    
+
                 </div>
-                
+
             </div>
         </section>
 
@@ -345,7 +352,7 @@
                     <h3>Меню</h3>
                     <hr class="menu-line">
                     <nav class="footer-nav">
-                        <a href="#header">Головна</a>
+                        <a href="index">Головна</a>
                         <a href="about" target="_blank">Про нас</a>
                         <a href="news" target="_blank">Новини</a>
                         <a href="#projects">Заходи</a>
@@ -368,6 +375,7 @@
     <script src="js/index-carrousel.js"></script>
     <script src="js/index-accordion.js"></script>
     <script src="js/index-listeners.js"></script>
+    <script src="js/burger-menu.js"></script>
 </body>
 
 </html>

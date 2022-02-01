@@ -72,7 +72,7 @@
     font-size: 14px;
     font-weight: 700;
     line-height: 16px;
-    padding: 15px 30px;
+    padding: 17px 30px;
     border-radius: 5px;
     margin-bottom: 30px;
     width: 74px;
@@ -113,6 +113,13 @@
     }
     .text-pay > h2{
         font-size: 28px;
+    }
+    .button-pay-declined{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .url-return-declined{
+        margin-left: 30px;
     }
 }
 

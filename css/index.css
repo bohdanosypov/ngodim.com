@@ -10,8 +10,7 @@
 }
 
 .main-photo{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/index/about-us/ngo-dim.jpg);
-    /* background-image: url(../img/index/main-ngo-dim.jpg); */
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/index/main-ngo-dim.png);
     height: 610px;
     background-size: cover;
     background-position: center;
@@ -93,6 +92,11 @@
     }
     .main-photo-text > h2{
         font-size: 26px;
+    }
+}
+@media (min-width: 1765px) {
+    .main-photo{
+        background-position: 90%;
     }
 }
 

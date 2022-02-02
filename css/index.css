@@ -10,7 +10,7 @@
 }
 
 .main-photo{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/index/main-ngo-dim.avif);
+    /* background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/index/main-ngo-dim.avif); */
     height: 610px;
     background-size: cover;
     background-position: center;
@@ -326,7 +326,7 @@
     background-image: url(../img/index/docudays/poster.jpg);
     height: 220px;
     background-size: cover;
-    background-position-y: 60%;
+    background-position-y: 70%;
 }
 
 .docudays-info{

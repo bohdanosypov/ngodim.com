@@ -212,7 +212,6 @@ li {
 
 footer{
     background-color: #225bc1;
-    padding: 30px 24px 0px;
     display: grid;
 }
 
@@ -238,12 +237,12 @@ footer{
 
 .footer-contact{
     display: grid;
-    padding: 10px 15px;
+    padding: 0 15px;
     text-align: center;
 }
 
 .footer-contact-card{
-    margin-top: 50px;
+    margin-top: 15px;
     text-align: center;
 }
 
@@ -366,12 +365,9 @@ footer{
     font-weight: 400;
     line-height: 23px;
     color: white;
-    padding: 15px;
+    padding: 5px;
 }
 
-.created-by > img {
-    width: 150px;
-}
 
 @media (min-width: 768px){
     .footer-follow-contact{
@@ -406,9 +402,15 @@ footer{
         grid-template-columns: 1fr 1fr 1fr;
         padding-right: 90px;
     }
+    .footer-follow-contact{
+        padding: 20px 10px;
+    }
+    .footer-logo-nav-map{
+        padding: 10px 15px;
+    }
     .footer-map > iframe{
         width: 400px;
-        height: 268px;
+        height: 100%;
     }
     .menu-line{
         width: 10% ;
@@ -417,5 +419,8 @@ footer{
     .footer-logo{
         margin: 0;
         padding: 0 15px;
+    }
+    .created-by{
+        padding-bottom: 10px;
     }
 }

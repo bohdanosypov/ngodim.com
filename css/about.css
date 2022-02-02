@@ -45,7 +45,7 @@
     font-weight: 500;
     line-height: 31px;
     color: #303031;
-    padding: 20px 0 15px;
+    padding: 20px 0 10px;
 }
 
 .about-cards > h4{
@@ -54,12 +54,12 @@
     font-weight: 400;
     line-height: 23px;
     color: #828285;
-    padding: 0 0 10px;
+    padding: 0 0 5px;
 }
 
 .about-card-follows > a > img{
     width: 30px;
-    margin: 10px 8px 10px;
+    margin: 5px 8px 0;
     border-radius: 20%;
 }
 

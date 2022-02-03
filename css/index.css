@@ -10,7 +10,8 @@
 }
 
 .main-photo{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/index/main-ngo-dim-drop.jpg);
+    /* background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/index/main-ngo-dim-drop.jpg); */
+    background-image: url(../img/index/main-ngo-dim-min.jpg);
     height: 610px;
     background-size: cover;
     background-position: center;

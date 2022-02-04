@@ -473,7 +473,7 @@
     margin: auto;
 }
 
-.projects-card-img{
+.projects-card-img {
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -482,15 +482,15 @@
 }
 
 .card-img-holiday{
-    background-image: url(../img/index/projects/holiday.avif);
+    background-image: url(../img/index/projects/holiday.jpg);
 }
 
 .card-img-camps{
-    background-image: url(../img/index/projects/camps.avif);
+    background-image: url(../img/index/projects/camps.jpg);
 }
 
 .card-img-mykolia{
-    background-image: url(../img/index/projects/mykolia.avif);
+    background-image: url(../img/index/projects/mykolia.jpg);
 }
 
 .projects-card > p{
@@ -503,7 +503,7 @@
     font-weight: 500;
     color: white;
     margin: -40px 10px 0 10px;
-    z-index: 50;
+    z-index: 3;
 }
 
 .projects-button{

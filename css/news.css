@@ -4,9 +4,6 @@
     scroll-behavior: smooth;
 }
 
-
-
-
 .news{
     padding: 20px 0 80px;
     align-items: center;
@@ -47,7 +44,7 @@
     margin-bottom: 10px;
 }
 
-.description > a{
+.info-button{
     text-decoration: none;
     background-color: #FBFF3C;
     color: #303031;
@@ -60,7 +57,7 @@
     margin: 20px auto auto 8px;
 }
 
-.description > a:hover{
+.info-button:hover{
     background-color: transparent;
     border: 2px solid  #FBFF3C;
 }

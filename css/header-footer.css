@@ -90,7 +90,10 @@ li {
         justify-content: center;
     }
     
-    .menu__list > li,div{
+    .menu__list > li{
+        padding: 10px;
+    }
+    .menu__list > div{
         padding: 10px;
     }
     
@@ -213,6 +216,7 @@ li {
 footer{
     background-color: #225bc1;
     display: grid;
+    padding: 15px;
 }
 
 .footer-follow-contact{

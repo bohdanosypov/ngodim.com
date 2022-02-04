@@ -4,39 +4,79 @@
     scroll-behavior: smooth;
 }
 
-.right-new, .left-news{
-    padding: 30px 20px;
-    display: grid;
+
+
+
+.news{
+    padding: 20px 0 80px;
+    align-items: center;
+    justify-content: center;
+    /* display: flex;
+    flex-direction: column-reverse; */
 }
 
-.text{
-    background-color: #225bc1;
-    padding: 20px;
-    margin: 20px auto;
+.img-preview{
+    text-align: center; 
+}
+.img-preview > img{
+    width: 80%;
     border-radius: 10px;
 }
 
-.date{
+.description{
+    padding: 20px;
+    text-align: left;
+}
+
+.news-data > h5{
     font-family: "Fira Sans", sans-serif;
     font-size: 14px;
     font-weight: 400;
-    color: white;
-    line-height: 23px;
-    padding-bottom: 15px;
+    color: #828285;
+    line-height: 22.4px;
+    padding: 10px;
 }
 
-.text-news{
+.news-text > h3{
     font-family: "Fira Sans", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    color: white;
+    color: #828285;
     line-height: 24px;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
-.centre{
-    justify-content: center;
-    align-items: center;
-    
+.description > a{
+    text-decoration: none;
+    background-color: #FBFF3C;
+    color: #303031;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 13px;
+    padding: 9px 15px;
+    border-radius: 5px;
+    margin: 20px auto auto 8px;
+}
+
+.description > a:hover{
+    background-color: transparent;
+    border: 2px solid  #FBFF3C;
+}
+
+.news-follow{
+    padding: 20px 10px;
+}
+
+.news-follow > a > img{
+    border-radius: 20%;
+}
+
+.news-follow > a > img:hover{
+    color: rgba(255, 255, 255, 0.3);
+   opacity: 0.8;
+   transition: 0.3s;
 }
 
 hr{
@@ -45,28 +85,19 @@ hr{
     background-color: #828285; 
     height: 1px; 
     width: 90%;
-    margin: auto
-}
-
-.mySlides1 > img, .mySlides2 > img{
-    width: 272px;
-    height: 221px;
-    border-radius: 10px;
+    margin: 10px auto
 }
 
 @media (min-width: 768px){
-    .right-new{
-        grid-template-columns: 1fr 1fr;
+    .news-block{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
     }
-    .left-news{
-        grid-template-columns: 1fr 1fr;
+    .img-preview{
+        justify-self: center; 
+        align-self: center;
+        margin-right: -20px;
+        padding-left: 10px;
     }
-    .text{
-        margin: 20px;
-    }
-    .mySlides1 > img, .mySlides2 > img{
-        width: 100%;
-        height: 300px;
-    }
-}
 
+}

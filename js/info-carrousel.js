@@ -1,4 +1,4 @@
-// (function () {
+// (async function () {
     var slideIndex = 1;
     showSlides(slideIndex);
     

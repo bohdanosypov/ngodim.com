@@ -14,12 +14,12 @@
             </div>
             <div class="description">
                 <div class="news-data">
-                    <h5><u>${product.data}</u></h5>
+                    <h5><u>${product.date}</u></h5>
                 </div>
                 <div class="news-text">
                     <h3>${product.text}</h3>
                 </div>
-                <a href="info" class="info-button" data-id="${product.id}"  target="_blank">Читати далі</a>
+                <a href="info#/${product.url}" class="info-button" data-id="${product.id}"  target="_blank">Читати далі</a>
                 <div class="news-follow">
                     <a href="${product.fb}" target="_blank"><img src="img/header/facebook.png"
                             alt="Facebook"></a>
